@@ -1,0 +1,273 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - heading "💬 Chat Widget" [level=1] [ref=e4]
+      - paragraph [ref=e5]: Universal embeddable chat widget with markdown support
+    - generic [ref=e6]:
+      - heading "Configuration" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Position
+            - combobox "Position" [ref=e12]:
+              - option "Right" [selected]
+              - option "Left"
+          - generic [ref=e13]:
+            - generic [ref=e14]: Theme Mode
+            - combobox "Theme Mode" [ref=e15]:
+              - option "Light"
+              - option "Dark" [selected]
+              - option "Auto"
+          - generic [ref=e16]:
+            - generic [ref=e17]: Primary Color
+            - textbox "Primary Color" [ref=e18]: "#6366f1"
+          - generic [ref=e19]:
+            - generic [ref=e20]: Title
+            - textbox "Title" [ref=e21]: Chat
+        - generic [ref=e22]:
+          - generic [ref=e23]: Features
+          - generic [ref=e24]:
+            - checkbox "Markdown" [checked] [ref=e25]
+            - generic [ref=e26]: Markdown
+          - generic [ref=e27]:
+            - checkbox "Code Highlighting" [checked] [ref=e28]
+            - generic [ref=e29]: Code Highlighting
+          - generic [ref=e30]:
+            - checkbox "Image Gallery" [checked] [ref=e31]
+            - generic [ref=e32]: Image Gallery
+          - generic [ref=e33]:
+            - checkbox "File Upload" [checked] [ref=e34]
+            - generic [ref=e35]: File Upload
+        - generic [ref=e36]:
+          - button "Apply Config" [ref=e37] [cursor=pointer]
+          - button "Reset" [ref=e38] [cursor=pointer]
+          - button "Toggle Widget" [ref=e39] [cursor=pointer]
+    - generic [ref=e40]:
+      - heading "How to Embed" [level=2] [ref=e41]
+      - generic [ref=e42]: "<!-- Add to your HTML --> <script src=\"https://your-domain.com/chat-widget.es.js\"></script> <script> ChatWidget.init({ apiUrl: 'http://localhost:3001', position: 'right', theme: { mode: 'light', primary: '#6366f1' }, labels: { title: 'Chat', subtitle: 'Online' } }); </script>"
+      - generic [ref=e43]:
+        - strong [ref=e44]: "💡 Test Commands:"
+        - text: Try typing "kod", "tabela", "obrazki", "plik", or "link" to see different message types!
+  - generic [ref=e340]:
+    - generic [ref=e344]:
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - img [ref=e348]
+          - generic [ref=e350]:
+            - heading "Chat" [level=3] [ref=e351]
+            - paragraph [ref=e352]: Online
+        - button "Close" [ref=e353] [cursor=pointer]:
+          - img [ref=e354]
+      - generic [ref=e357]:
+        - generic [ref=e359]:
+          - paragraph [ref=e361]: "Sprawdź ten link:"
+          - link "GitHub GitHub Where the world builds software github.com" [ref=e362] [cursor=pointer]:
+            - /url: https://github.com
+            - img "GitHub" [ref=e364]
+            - generic [ref=e365]:
+              - generic [ref=e366]: GitHub
+              - generic [ref=e367]: Where the world builds software
+              - generic [ref=e368]:
+                - img [ref=e369]
+                - generic [ref=e373]: github.com
+          - generic [ref=e374]: 10:10 AM
+        - generic [ref=e376]:
+          - paragraph [ref=e378]: link
+          - generic [ref=e379]: 10:10 AM
+        - generic [ref=e381]:
+          - paragraph [ref=e383]: "Oto obrazki:"
+          - generic [ref=e384]:
+            - link "Image" [ref=e385] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=1
+              - img "Image" [ref=e386]
+            - link "Image" [ref=e387] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=2
+              - img "Image" [ref=e388]
+          - generic [ref=e389]: 10:10 AM
+        - generic [ref=e391]:
+          - paragraph [ref=e393]: obrazki
+          - generic [ref=e394]: 10:10 AM
+        - generic [ref=e396]:
+          - table [ref=e398]:
+            - rowgroup [ref=e399]:
+              - row "Col 1 Col 2" [ref=e400]:
+                - columnheader "Col 1" [ref=e401]
+                - columnheader "Col 2" [ref=e402]
+            - rowgroup [ref=e403]:
+              - row "A B" [ref=e404]:
+                - cell "A" [ref=e405]
+                - cell "B" [ref=e406]
+              - row "C D" [ref=e407]:
+                - cell "C" [ref=e408]
+                - cell "D" [ref=e409]
+          - generic [ref=e410]: 10:10 AM
+        - generic [ref=e412]:
+          - paragraph [ref=e414]: tabela
+          - generic [ref=e415]: 10:10 AM
+        - generic [ref=e417]:
+          - code [ref=e420]:
+            - generic [ref=e421]: "function hello() {"
+            - generic [ref=e422]: console.log("Hello!");
+            - generic [ref=e423]: "}"
+          - generic [ref=e424]: 10:10 AM
+        - generic [ref=e426]:
+          - paragraph [ref=e428]: kod
+          - generic [ref=e429]: 10:10 AM
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - paragraph [ref=e433]: "Otrzymałem: “This is a very long message to test how the chat handles lengthy text input. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. This should be long enough to test wrapping and display.”"
+            - paragraph [ref=e434]: Wpisz “kod”, “tabela”, “obrazki”, “plik” lub “link” aby zobaczyć różne typy.
+          - generic [ref=e435]: 10:09 AM
+        - generic [ref=e437]:
+          - paragraph [ref=e439]: This is a very long message to test how the chat handles lengthy text input. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. This should be long enough to test wrapping and display.
+          - generic [ref=e440]: 10:09 AM
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - paragraph [ref=e444]: "Otrzymałem: “Test emoji 👍 🎉 😀 ❤️”"
+            - paragraph [ref=e445]: Wpisz “kod”, “tabela”, “obrazki”, “plik” lub “link” aby zobaczyć różne typy.
+          - generic [ref=e446]: 10:09 AM
+        - generic [ref=e448]:
+          - paragraph [ref=e450]: Test emoji 👍 🎉 😀 ❤️
+          - generic [ref=e451]: 10:09 AM
+        - generic [ref=e453]:
+          - generic [ref=e454]:
+            - paragraph [ref=e455]: "Otrzymałem: “<script>alert(“xss”)</script> & special <chars>”"
+            - paragraph [ref=e456]: Wpisz “kod”, “tabela”, “obrazki”, “plik” lub “link” aby zobaczyć różne typy.
+          - generic [ref=e457]: 10:09 AM
+        - generic [ref=e459]:
+          - paragraph [ref=e461]: <script>alert(“xss”)</script> & special <chars>
+          - generic [ref=e462]: 10:09 AM
+        - generic [ref=e464]:
+          - generic [ref=e465]:
+            - paragraph [ref=e466]: "Otrzymałem: “Hello, this is a test message”"
+            - paragraph [ref=e467]: Wpisz “kod”, “tabela”, “obrazki”, “plik” lub “link” aby zobaczyć różne typy.
+          - generic [ref=e468]: 10:09 AM
+        - generic [ref=e470]:
+          - paragraph [ref=e472]: Hello, this is a test message
+          - generic [ref=e473]: 10:09 AM
+        - generic [ref=e475]:
+          - paragraph [ref=e477]: "Oto obrazki:"
+          - generic [ref=e478]:
+            - link "Image" [ref=e479] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=1
+              - img "Image" [ref=e480]
+            - link "Image" [ref=e481] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=2
+              - img "Image" [ref=e482]
+          - generic [ref=e483]: 09:29 AM
+        - generic [ref=e485]:
+          - paragraph [ref=e487]: obrazki
+          - generic [ref=e488]: 09:29 AM
+        - generic [ref=e490]:
+          - paragraph [ref=e492]: "Oto obrazki:"
+          - generic [ref=e493]:
+            - link "Image" [ref=e494] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=1
+              - img "Image" [ref=e495]
+            - link "Image" [ref=e496] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=2
+              - img "Image" [ref=e497]
+          - generic [ref=e498]: 09:29 AM
+        - generic [ref=e500]:
+          - paragraph [ref=e502]: obrazki
+          - generic [ref=e503]: 09:29 AM
+        - generic [ref=e505]:
+          - paragraph [ref=e507]: "Oto plik:"
+          - link "📄 dokument.pdf 12.1 KB" [ref=e508] [cursor=pointer]:
+            - /url: https://example.com/file.pdf
+            - generic [ref=e509]: 📄
+            - generic [ref=e510]:
+              - generic [ref=e511]: dokument.pdf
+              - generic [ref=e512]: 12.1 KB
+            - img [ref=e514]
+          - generic [ref=e517]: 09:29 AM
+        - generic [ref=e519]:
+          - paragraph [ref=e521]: plik
+          - generic [ref=e522]: 09:29 AM
+        - generic [ref=e524]:
+          - paragraph [ref=e526]: "Oto obrazki:"
+          - generic [ref=e527]:
+            - link "Image" [ref=e528] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=1
+              - img "Image" [ref=e529]
+            - link "Image" [ref=e530] [cursor=pointer]:
+              - /url: https://picsum.photos/800/600?random=2
+              - img "Image" [ref=e531]
+          - generic [ref=e532]: 08:53 AM
+        - generic [ref=e534]:
+          - paragraph [ref=e536]: obrazki
+          - generic [ref=e537]: 08:53 AM
+        - generic [ref=e539]:
+          - paragraph [ref=e541]: "Sprawdź ten link:"
+          - link "GitHub GitHub Where the world builds software github.com" [ref=e542] [cursor=pointer]:
+            - /url: https://github.com
+            - img "GitHub" [ref=e544]
+            - generic [ref=e545]:
+              - generic [ref=e546]: GitHub
+              - generic [ref=e547]: Where the world builds software
+              - generic [ref=e548]:
+                - img [ref=e549]
+                - generic [ref=e553]: github.com
+          - generic [ref=e554]: 08:48 AM
+        - generic [ref=e556]:
+          - paragraph [ref=e558]: link
+          - generic [ref=e559]: 08:48 AM
+        - generic [ref=e561]:
+          - generic [ref=e562]:
+            - paragraph [ref=e563]: "Otrzymałem: “tekst”"
+            - paragraph [ref=e564]: Wpisz “kod”, “tabela”, “obrazki”, “plik” lub “link” aby zobaczyć różne typy.
+          - generic [ref=e565]: 08:47 AM
+        - generic [ref=e567]:
+          - paragraph [ref=e569]: tekst
+          - generic [ref=e570]: 08:47 AM
+        - generic [ref=e572]:
+          - paragraph [ref=e574]: "Oto plik:"
+          - link "📄 dokument.pdf 12.1 KB" [ref=e575] [cursor=pointer]:
+            - /url: https://example.com/file.pdf
+            - generic [ref=e576]: 📄
+            - generic [ref=e577]:
+              - generic [ref=e578]: dokument.pdf
+              - generic [ref=e579]: 12.1 KB
+            - img [ref=e581]
+          - generic [ref=e584]: 08:47 AM
+        - generic [ref=e586]:
+          - paragraph [ref=e588]: plik
+          - generic [ref=e589]: 08:47 AM
+        - generic [ref=e591]:
+          - code [ref=e594]:
+            - generic [ref=e595]: "function hello() {"
+            - generic [ref=e596]: console.log("Hello!");
+            - generic [ref=e597]: "}"
+          - generic [ref=e598]: 08:47 AM
+        - generic [ref=e600]:
+          - paragraph [ref=e602]: kod
+          - generic [ref=e603]: 08:47 AM
+        - generic [ref=e605]:
+          - generic [ref=e606]:
+            - paragraph [ref=e607]: Cześć! 👋 Jestem asystentem demo.
+            - paragraph [ref=e608]: "Napisz:"
+            - list [ref=e609]:
+              - listitem [ref=e610]:
+                - strong [ref=e611]: “kod”
+                - text: "- przykład kodu"
+              - listitem [ref=e612]:
+                - strong [ref=e613]: “tabela”
+                - text: "- tabela"
+              - listitem [ref=e614]:
+                - strong [ref=e615]: “obrazki”
+                - text: "- galeria"
+              - listitem [ref=e616]:
+                - strong [ref=e617]: “plik”
+                - text: "- załącznik"
+              - listitem [ref=e618]:
+                - strong [ref=e619]: “link”
+                - text: "- link preview"
+          - generic [ref=e620]: 08:46 AM
+      - generic [ref=e622]:
+        - button "Attach file" [ref=e623] [cursor=pointer]:
+          - img [ref=e624]
+        - textbox "Type a message..." [ref=e626]
+        - button "Send" [disabled] [ref=e627]:
+          - img [ref=e628]
+    - button "Close chat" [active] [ref=e631] [cursor=pointer]:
+      - img [ref=e632]
