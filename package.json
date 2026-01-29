@@ -1,0 +1,67 @@
+{
+  "name": "chat-widget",
+  "version": "1.0.0",
+  "description": "Universal embeddable chat widget with markdown, image gallery, and file upload support",
+  "type": "module",
+  "main": "./dist/chat-widget.umd.js",
+  "module": "./dist/chat-widget.es.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/chat-widget.es.js",
+      "require": "./dist/chat-widget.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "mock-api": "node mock-api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snicer1/chatbot_front.git"
+  },
+  "keywords": [
+    "chat",
+    "widget",
+    "preact",
+    "markdown",
+    "upload"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snicer1/chatbot_front/issues"
+  },
+  "homepage": "https://github.com/snicer1/chatbot_front#readme",
+  "dependencies": {
+    "@uppy/core": "^5.2.0",
+    "@uppy/drag-drop": "^5.1.0",
+    "@uppy/xhr-upload": "^5.1.1",
+    "dompurify": "^3.3.1",
+    "glightbox": "^3.3.1",
+    "ky": "^1.14.3",
+    "lucide-preact": "^0.563.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-emoji": "^3.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "motion": "^12.29.2",
+    "preact": "^10.28.2",
+    "shiki": "^3.21.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "@types/markdown-it": "^14.1.2",
+    "terser": "^5.46.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

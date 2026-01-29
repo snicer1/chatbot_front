@@ -1,0 +1,116 @@
+/* Reset and base styles */
+.chat-widget,
+.chat-widget * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-widget {
+  position: fixed;
+  z-index: 999999;
+  font-family: var(--chat-font-family);
+  font-size: var(--chat-font-size);
+  color: var(--chat-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.chat-widget-left {
+  align-items: flex-start;
+}
+
+.chat-widget button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.chat-widget input,
+.chat-widget textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  outline: none;
+}
+
+.chat-widget a {
+  color: var(--chat-primary);
+  text-decoration: none;
+}
+
+.chat-widget a:hover {
+  text-decoration: underline;
+}
+
+.chat-widget code {
+  font-family: var(--chat-font-mono);
+  font-size: 0.9em;
+  background: var(--chat-bg-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.chat-widget pre {
+  font-family: var(--chat-font-mono);
+  font-size: 0.9em;
+  background: var(--chat-bg-secondary);
+  padding: var(--chat-spacing-md);
+  border-radius: var(--chat-spacing-sm);
+  overflow-x: auto;
+}
+
+.chat-widget pre code {
+  background: none;
+  padding: 0;
+}
+
+.chat-widget img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chat-widget table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--chat-spacing-md) 0;
+}
+
+.chat-widget th,
+.chat-widget td {
+  padding: var(--chat-spacing-sm);
+  border: 1px solid var(--chat-border);
+  text-align: left;
+}
+
+.chat-widget th {
+  background: var(--chat-bg-secondary);
+  font-weight: 600;
+}
+
+.chat-widget blockquote {
+  border-left: 3px solid var(--chat-primary);
+  padding-left: var(--chat-spacing-md);
+  margin: var(--chat-spacing-md) 0;
+  color: var(--chat-text-secondary);
+}
+
+.chat-widget ul,
+.chat-widget ol {
+  padding-left: var(--chat-spacing-xl);
+  margin: var(--chat-spacing-sm) 0;
+}
+
+.chat-widget li {
+  margin: var(--chat-spacing-xs) 0;
+}

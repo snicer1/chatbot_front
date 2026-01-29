@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --chat-primary: #6366f1;
+  --chat-primary-hover: #4f46e5;
+  --chat-bg: #ffffff;
+  --chat-bg-secondary: #f8fafc;
+  --chat-text: #1e293b;
+  --chat-text-secondary: #64748b;
+  --chat-border: #e2e8f0;
+
+  /* Typography */
+  --chat-font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --chat-font-mono: 'JetBrains Mono', monospace;
+  --chat-font-size: 14px;
+
+  /* Spacing */
+  --chat-border-radius: 16px;
+  --chat-spacing-xs: 4px;
+  --chat-spacing-sm: 8px;
+  --chat-spacing-md: 12px;
+  --chat-spacing-lg: 16px;
+  --chat-spacing-xl: 24px;
+
+  /* Shadows */
+  --chat-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --chat-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --chat-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --chat-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Transitions */
+  --chat-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --chat-transition-fast: 150ms;
+  --chat-transition-normal: 250ms;
+  --chat-transition-slow: 350ms;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --chat-primary: #818cf8;
+  --chat-primary-hover: #6366f1;
+  --chat-bg: #0f172a;
+  --chat-bg-secondary: #1e293b;
+  --chat-text: #f1f5f9;
+  --chat-text-secondary: #94a3b8;
+  --chat-border: #334155;
+}
