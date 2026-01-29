@@ -11,6 +11,7 @@ import './styles/variables.css';
 import './styles/base.css';
 import './styles/components.css';
 import './styles/animations.css';
+import 'glightbox/dist/css/glightbox.min.css';
 
 interface ChatWidgetProps {
   config: ChatWidgetConfig;

@@ -9,19 +9,59 @@ interface MessageImagesProps {
 
 export function MessageImages({ images, enableGallery }: MessageImagesProps) {
   const galleryRef = useRef<HTMLDivElement>(null);
+  const lightboxRef = useRef<any>(null);
 
   useEffect(() => {
-    if (enableGallery && galleryRef.current && typeof window !== 'undefined') {
-      import('glightbox').then(({ default: GLightbox }) => {
-        GLightbox({
-          selector: '.chat-image-item',
-          touchNavigation: true,
-          loop: true,
-          autoplayVideos: false
+    if (!enableGallery || !galleryRef.current || typeof window === 'undefined') {
+      return;
+    }
+
+    let destroyed = false;
+
+    import('glightbox').then(({ default: GLightbox }) => {
+      if (destroyed) return;
+
+      // Destroy previous instance if exists
+      if (lightboxRef.current) {
+        lightboxRef.current.destroy();
+      }
+
+      // Build elements array from images (GLightbox expects objects, not DOM nodes)
+      const elements = images.map((image) => ({
+        href: image.url,
+        type: 'image' as const,
+        alt: image.filename || 'Image',
+      }));
+
+      // Create new instance with elements array
+      lightboxRef.current = GLightbox({
+        elements,
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false,
+        closeOnOutsideClick: true,
+      });
+
+      // Attach click handlers to links
+      const links = galleryRef.current!.querySelectorAll('.chat-image-item');
+      links.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (lightboxRef.current) {
+            lightboxRef.current.openAt(index);
+          }
         });
       });
-    }
-  }, [enableGallery]);
+    });
+
+    return () => {
+      destroyed = true;
+      if (lightboxRef.current) {
+        lightboxRef.current.destroy();
+        lightboxRef.current = null;
+      }
+    };
+  }, [enableGallery, images]);
 
   if (images.length === 0) return null;
 
@@ -35,7 +75,6 @@ export function MessageImages({ images, enableGallery }: MessageImagesProps) {
           key={image.id}
           href={image.url}
           class="chat-image-item"
-          data-gallery="message-gallery"
         >
           <img
             src={image.thumbnailUrl || image.url}
